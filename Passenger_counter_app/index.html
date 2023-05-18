@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <title>Home Page</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <p id="welcome-el">welcome-el ok</p>
-        <h1>People entered:</h1>
-        <h2 id="count-el">0</h2>
-        <button id="increment-btn" onclick="increment()">INCREMENT</button>
-        <button id="save-btn" onclick="save()">SAVE</button>
-        <script src="script.js" ></script>
+        <div class="main-content">
+            <h2>Let's count together 😆! </h2>
+            <h1>People entered:</h1>
+            <p id="count-el">0</p>
+            <button id='incre-btn' onclick="increment()">INCREMENT</button>
+            <button id='save-btn' onclick="save()">SAVE</button>
+            <h1 id="pre-entry">Previous entries: </h1>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
