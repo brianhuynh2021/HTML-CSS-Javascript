@@ -17,6 +17,7 @@ body {
     font-size: 60pt;
     margin-top: 8px;
     margin-bottom: 18px;
+    color: rgb(66, 95, 173);
 }
 
 h2 {
@@ -28,7 +29,9 @@ h2 {
 h1 {
     color:rgb(94, 187, 92);
 }
-
+h3 {
+    color: rgb(66, 95, 173);
+}
 #incre-btn {
     background-color: darkred;
     color: rgb(242, 236, 236);
@@ -39,12 +42,19 @@ h1 {
 #save-btn {
     display: block;
     text-align: center;
-    background-color: darkgreen;
+    background-color: rgb(94, 187, 92);
     color: rgb(242, 236, 236);
     font-size: 40px;
     border-radius: 8px;
     margin:auto;
     margin-top: 8px;
-    width: 257px;
+    width: 255px;
     margin-bottom: 10px
+}
+
+#total-el {
+    font-size: 60pt;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    color: rgb(94, 187, 92);
 }
