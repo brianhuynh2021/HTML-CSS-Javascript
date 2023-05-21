@@ -1,32 +1,45 @@
-// let firstName = "Brian";
-// let lastName = "Huynh"
+//Black jack game
 
-// let fullName = firstName + " " + lastName;
+let firstCard = getRandomCard();
+let secondCard = 4;
+let cards = [firstCard, secondCard]
+let sum = firstCard + secondCard
+let hasBlackJack = false
+let isAlive = true
+let message = ""
+let messageEl = document.getElementById("message-el")
+let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
 
-// let name = "Linda"
-// let greeting = "Hi there"
-// function greet() {
-//     console.log(greeting + ", " + name + "!")
-// }
-// greet()
-// console.log(fullName)
+function getRandomCard() {
+    return 5;
+}
+function renderGame() {
+    cardsEl.textContent = "Cards: "
+    for (let i = 0; i < cards.length; i ++){
+        cardsEl.textContent += cards[i] + " "
+    }
+    sumEl.textContent = "Sum: " + sum
+    if (sum < 0) {
+        message = "Do you wanna draw a new card?"
+    } else if (sum === 21) {
+        message = "Wohoo! You've got Blackjack!"
+        hasBlackJack = true
+    } else {
+        message = "You're out of the game!"
+        isAlive = false
+    }
+    messageEl.textContent = message
+}
 
-// let myPoints = 3;
+function newCard() {
+    console.log("Drawing a new card from the deck");
+    let card = 7;
+    sum += card;
+    cards.push(card)
+    renderGame()
+}
 
-// function add3Points() {
-//     myPoints += 3;
-// }
-
-// function remove1Point() {
-//     myPoints -= 1;
-// }
-
-// add3Points()
-
-
-console.log("2" + 2);
-console.log(11+7);
-console.log(6+"5");
-console.log("My points: " + 5 + 9);
-console.log(2 + 2);
-console.log("11" + "14");
+function startGame() {
+    renderGame();
+}
