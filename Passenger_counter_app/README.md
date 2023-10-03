@@ -8,7 +8,7 @@ Features
 
 
 How to run it locally
-    - git clone git@github.com:brianhuynh2021/HTML-CSS-Javascript.git
+    - git clone git@github.com:brianhuynh2021/HTML-CSS-Javascript.git.
     - Open the index.html file in your preferred web browser.
 
 Usage
